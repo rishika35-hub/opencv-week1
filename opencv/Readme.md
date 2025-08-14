@@ -54,11 +54,12 @@ These markdown files summarize theoretical OpenCV concepts:
 ### 1. [read_display_image.py](exercises/read_display_image.py)
 - **Purpose:** Read and display an image.  
 - **How to run locally:**  
-```bash
+
 python exercises/read_display_image.py
 Expected Result: Opens a window displaying assets/lena.jpg. A copy is saved as assets/output.jpg.
 
 Screenshot Example:
+
 
 
 2. basic_drawing.py
@@ -135,3 +136,4 @@ References
 OpenCV Official Documentation
 
 YouTube Playlist: OpenCV Week 1
+
