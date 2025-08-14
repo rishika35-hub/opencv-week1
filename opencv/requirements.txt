@@ -1,0 +1,12 @@
+1. OpenCV core functionality
+pip install opencv-python
+
+2. OpenCV extra modules (contrib)
+pip install opencv-contrib-python
+
+3. NumPy (array handling)
+pip install numpy
+
+4. Matplotlib (optional, plotting/histograms)
+pip install matplotlib
+
