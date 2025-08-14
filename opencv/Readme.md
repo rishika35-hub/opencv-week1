@@ -1,15 +1,13 @@
 # OpenCV Week 1 Assignment
 
 ## Project Overview
-This repository contains the Week 1 assignment for OpenCV fundamentals. The goal of this assignment is to help you understand OpenCV core modules, image processing operations, basic drawing, video processing, and practical applications of OpenCV using Python.
+This repository contains the Week 1 assignment for OpenCV fundamentals using Python. The goal is to help you understand OpenCV core modules, image processing operations, basic drawing, video processing, and practical applications.  
 
-You will also explore image and video handling, filters, edge detection, and auto-downloading of sample assets. This is a foundational step to prepare for advanced computer vision projects.
+It also demonstrates image and video handling, filters, edge detection, and automatic downloading of sample assets. This project is a foundation for advanced computer vision projects.
 
 ---
 
 ## Folder Structure
-
-
 
 opencv-week1/
 │
@@ -17,178 +15,123 @@ opencv-week1/
 │ ├── introduction.md
 │ ├── core_module.md
 │ ├── imgproc_module.md
-│ ├── misc_research.md
+│ └── misc_research.md
 │
 ├── exercises/
 │ ├── read_display_image.py
 │ ├── basic_drawing.py
 │ ├── video_capture.py
-│ ├── filtering.py
+│ └── filtering.py
 │
 ├── research/
 │ ├── opencv_applications.md
-│ ├── os_window_differences.md
+│ └── os_window_differences.md
 │
 ├── assets/
-│ ├── lena.jpg # Sample image (auto downloaded)
-│ ├── vtest.avi # Sample video (auto downloaded)
-│ ├── basic_drawing_output.jpg # Output from drawing exercise
+│ ├── lena.jpg
+│ ├── vtest.avi
+│ └── basic_drawing_output.jpg
 │
 ├── report.pdf
 ├── README.md
 ├── requirements.txt
-├── setup_assets.py
-
+└── setup_assets.py
 
 ---
 
 ## Notes (`notes/`)
-These markdown files summarize the theoretical concepts of OpenCV:
+These markdown files summarize theoretical OpenCV concepts:
 
-1. **`introduction.md`**  
-   - Overview, history, installation, and setup of OpenCV.
-   - Reference links to official documentation and tutorials.
-
-2. **`core_module.md`**  
-   - Explains the core module: arrays, data structures, basic operations.
-   - Example code included with NumPy arrays and OpenCV utility functions.
-
-3. **`imgproc_module.md`**  
-   - Explains image processing functions: filters, edge detection, transformations.
-   - Includes code examples for Gaussian blur, Canny edge detection.
-
-4. **`misc_research.md`**  
-   - Research notes about OpenCV applications in robotics, medical imaging, AR, and differences in window handling between Linux and Windows.
+- **[introduction.md](notes/introduction.md)** – Overview, history, installation, and setup.  
+- **[core_module.md](notes/core_module.md)** – Core module: arrays, data structures, basic operations.  
+- **[imgproc_module.md](notes/imgproc_module.md)** – Image processing functions: filters, edge detection, transformations.  
+- **[misc_research.md](notes/misc_research.md)** – Research on OpenCV applications and OS window handling differences.
 
 ---
 
 ## Exercises (`exercises/`)
-These Python scripts demonstrate practical OpenCV operations.
 
-### 1. `read_display_image.py`
-- **Purpose:** Read and display an image.
-- **File path:** `exercises/read_display_image.py`
-- **How to run:**
+### 1. [read_display_image.py](exercises/read_display_image.py)
+- **Purpose:** Read and display an image.  
+- **How to run locally:**  
 ```bash
 python exercises/read_display_image.py
-
-
-Expected Result: A window displaying lena.jpg. Press any key to close. A copy will be saved as assets/output.jpg.
+Expected Result: Opens a window displaying assets/lena.jpg. A copy is saved as assets/output.jpg.
 
 Screenshot Example:
-(Add image later: assets/screenshot_read_image.jpg)
+
 
 2. basic_drawing.py
-
 Purpose: Draw shapes (line, rectangle, circle) on a canvas.
 
-File path: exercises/basic_drawing.py
-
-How to run:
+How to run locally:
 
 python exercises/basic_drawing.py
-
-
-Expected Result: A window displaying a canvas with a blue line, green rectangle, and red circle. Saved as assets/basic_drawing_output.jpg.
+Expected Result: Window shows a blue line, green rectangle, and red circle. Saved as assets/basic_drawing_output.jpg.
 
 Screenshot Example:
-(Add image later: assets/screenshot_basic_drawing.jpg)
+
 
 3. video_capture.py
+Purpose: Play a video file.
 
-Purpose: Read and play a video file.
-
-File path: exercises/video_capture.py
-
-How to run:
+How to run locally:
 
 python exercises/video_capture.py
-
-
-Expected Result: Window playing vtest.avi. Press q to exit.
+Expected Result: Window plays assets/vtest.avi. Press q to exit.
 
 4. filtering.py
+Purpose: Apply filters and edge detection.
 
-Purpose: Apply image processing filters and edge detection.
-
-File path: exercises/filtering.py
-
-How to run:
+How to run locally:
 
 python exercises/filtering.py
-
-
-Expected Result: A window showing edges of the image after Gaussian blur and Canny edge detection.
+Expected Result: Window shows edges after Gaussian blur and Canny edge detection.
 
 Research (research/)
+opencv_applications.md – Lists real-world applications of OpenCV.
 
-opencv_applications.md → Lists real-world applications of OpenCV in various industries.
-
-os_window_differences.md → Explains how OpenCV handles windows differently in Linux and Windows.
+os_window_differences.md – Explains OpenCV window handling differences between Linux and Windows.
 
 Assets (assets/)
-
-Contains downloaded sample images and videos.
-
-All exercises automatically check for these assets and download them if missing.
-
+Contains sample images and videos downloaded automatically.
 Outputs from exercises are also saved here.
 
-Setup Instructions
-
-Clone the repository:
-
-git clone https://github.com/<your-username>/opencv-week1.git
 cd opencv-week1
-
-
 Install dependencies:
 
 pip install -r requirements.txt
+Or individually:
 
-
-Or install individually:
-
-pip install opencv-python
-pip install opencv-contrib-python
-pip install numpy
-pip install matplotlib
-
-
-Run setup_assets.py once to ensure assets are downloaded (optional; exercises also auto-download):
+pip install opencv-python opencv-contrib-python numpy matplotlib
+Download sample assets (optional, exercises auto-download too):
 
 python setup_assets.py
-
-
 Run any exercise:
 
 python exercises/read_display_image.py
 python exercises/basic_drawing.py
 python exercises/video_capture.py
 python exercises/filtering.py
-
 Project Highlights
-
 Fully Python-based OpenCV exercises.
 
-Auto-download assets: No manual setup required.
+Automatic asset downloading.
 
-Demonstrates core module, image processing, drawing, video handling.
+Demonstrates core module, image processing, drawing, and video handling.
 
-Organized with notes, exercises, research for learning and reference.
+Organized for easy learning and reference.
 
-Ready for VS Code and local execution.
+Ready for VS Code execution.
 
 Future Improvements
+Additional exercises: camera capture, filters, and feature detection.
 
-Add more exercises: camera capture, filters, and feature detection.
+Histogram visualization using matplotlib.
 
-Include histogram visualization using matplotlib.
-
-Expand research notes with deep learning and DNN examples.
+Extended research notes with deep learning and DNN examples.
 
 References
-
 OpenCV Official Documentation
 
-YouTube Playlist for OpenCV Week 1
+YouTube Playlist: OpenCV Week 1
